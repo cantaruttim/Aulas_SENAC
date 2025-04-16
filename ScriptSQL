@@ -1,0 +1,13 @@
+CREATE DATABASE Aulas_UC3;
+USE Aulas_UC3;
+
+CREATE DATABASE contato (
+  id int auto_increment,
+  nome varchar(150),
+  email varchar(150),
+  telefone varchar(150)
+  primary key(id)
+);
+
+select * from contato;
+desc contato;
