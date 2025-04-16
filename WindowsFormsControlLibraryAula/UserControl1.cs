@@ -65,6 +65,7 @@ namespace WindowsFormsControlLibraryAula
                     "VALUES" +
                     "(@nome, @email, @telefone)";
 
+                // são os valores encontrados dentro dos meus textsBox
                 cmd.Parameters.AddWithValue("@nome", txtNome.Text);
                 cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
@@ -83,7 +84,11 @@ namespace WindowsFormsControlLibraryAula
                 // Mostrando a Mensagem para o Usuário
                 //MessageBox.Show("Dados Inseridos com Sucesso!!!");
 
-                MessageBox.Show("Contato Inserido com Sucesso ", "Sucesso ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(
+                    "Contato Inserido com Sucesso ", 
+                    "Sucesso ", 
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Information);
 
             }
             catch (MySqlException ex)
