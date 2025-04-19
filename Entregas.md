@@ -30,3 +30,5 @@ C# e o banco MySQL
 `Obs¹`: No item 4 - Validar se um usuário possui login, caso contrário ele deverá realizar o cadastro. 
 Caso esse mesmo usuário deseje criar um novo login, deverá utilizar um novo email/usuário etc pois 
 já possui cadastro
+
+`Obs²`: Quando escolhemos o projeto a ser criado, ao escolher os projetos que terminem com .NET FRAMEWORK, as bibliotecas estarão sendo importadas para apareceram com um pequeno ícone ao lado {}. Podemos importar as bibliotecas livremente. Porem ao escolhermos os projetos que não são .NET FRAMEWORK as bibliotecas aparecem normamlmente não sendo implicitamente referenciadas
