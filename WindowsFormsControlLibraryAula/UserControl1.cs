@@ -17,7 +17,7 @@ namespace WindowsFormsControlLibraryAula
         MySqlConnection Conexao;
 
         // padrão: host user senha
-        private string data_source = "datasource=localhost;username=root;password=;database=aulas";
+        private string data_source = "datasource=localhost;username=root;password=12102021;database=aulas";
 
         /* tipo anulável (int --> só posso colocar tipos inteiros, porem null é diferente de inteiro. Colocando o sinal de ?
            dizemos que a nossa variável pode ser nula! */
@@ -285,9 +285,29 @@ namespace WindowsFormsControlLibraryAula
                //  MessageBox.Show("Id Selecionado = " + id_contato_selecionado);
             }
 
+            btnExcluir.Visible = true;
+
         }
 
         private void Atualizar_Click(object sender, EventArgs e)
+        {
+
+            zerar_forms();
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            excluir_contato();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            excluir_contato();
+        }
+
+        private void zerar_forms()
         {
             id_contato_selecionado = null;
             txtNome.Text = String.Empty;
@@ -295,7 +315,64 @@ namespace WindowsFormsControlLibraryAula
             txtTelefone.Text = "";
             txtNome.Focus();
 
+        }
 
+        private void excluir_contato()
+        {
+            try
+            {
+
+                DialogResult conf = MessageBox.Show("Deseja Excluir o Registro com ?",
+                                                    "Certeza ?",
+                                                       MessageBoxButtons.YesNo,
+                                                       MessageBoxIcon.Warning);
+
+                if (conf == DialogResult.Yes)
+                {
+
+
+                    Conexao = new MySqlConnection(data_source);
+                    Conexao.Open();
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = Conexao;
+
+                    cmd.Connection = Conexao;
+                    cmd.CommandText = "DELETE FROM contato WHERE id=@id";
+                    cmd.Parameters.AddWithValue("@id", id_contato_selecionado);
+
+                    cmd.ExecuteNonQuery();
+
+
+                    MessageBox.Show(
+                            "Contato Excluido com Sucesso!",
+                            "Sucesso", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information
+                            );
+
+
+                    carregar_contatos();
+
+
+                    zerar_forms();
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Erro " + ex.Number + "Ocorreu: " + ex.Message,
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocorreu: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                Conexao.Close();
+            }
         }
     }
 }
+
