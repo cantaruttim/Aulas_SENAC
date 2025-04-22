@@ -11,3 +11,6 @@ CREATE DATABASE contato (
 
 select * from contato;
 desc contato;
+
+
+// para saber mais: https://www.udemy.com/course/advanced-tsql-querying-using-sql-2014/learn/lecture/3452914#overview
