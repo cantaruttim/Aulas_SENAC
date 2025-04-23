@@ -7,3 +7,5 @@ CRIE UM NOVO PROJETO E SIMPLES COM FRONT END E CONECTE AO BANCO DE DADOS
 		1. Utilize pelo menos um JOIN <br />
 		2. Implemente pelo menos uma seleção de tabela
 - IMPLEMENTE O MÉTODO PARA ATUALIZAÇÃO DOS DADOS 
+
+Obs¹: Enviar para cantaruttim@outlook.com
