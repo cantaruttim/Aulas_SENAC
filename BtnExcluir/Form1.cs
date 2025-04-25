@@ -22,7 +22,7 @@ namespace BtnExcluir
         }
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("VocÍ clicou no menu");
+            MessageBox.Show("Voc√™ clicou no menu");
         }
 
         private void btnExcluir_Click(object sender, EventArgs e) { }
@@ -79,16 +79,17 @@ namespace BtnExcluir
         private void btnCarregarContato_Click(object sender, EventArgs e)
         {
             string Categoria = txtCategoria.Text.Trim().ToUpper();
+            cbTexto.Text = Categoria; // ou com o select
 
             if (dadosBanco.Contains(Categoria, StringComparer.OrdinalIgnoreCase))
             {
-                MessageBox.Show("Valor j· existe");
+                MessageBox.Show("Valor j√° existe");
 
             } else
             {
-                MessageBox.Show("Valor n„o existe - Cadastrar");
+                MessageBox.Show("Valor n√£o existe - Cadastrar");
 
-                // FUN«√O INSERT
+                // FUN√á√ÉO INSERT
 
 
             }
