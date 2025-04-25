@@ -41,6 +41,7 @@ namespace BtnExcluir
             txtTelefone = new TextBox();
             btnCarregarContato = new Button();
             txtCategoria = new TextBox();
+            cbTexto = new ComboBox();
             contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
