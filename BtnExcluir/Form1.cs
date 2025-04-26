@@ -5,16 +5,17 @@ namespace BtnExcluir
 {
     public partial class Form1 : Form
     {
-        public int? id_contato_selecioando = 10;
-        private List<string> dadosBanco;
-        private List<int> idCategoria;
+        //public int? id_contato_selecioando = 10;
+        //private List<string> dadosBanco;
+        //private List<int> idCategoria;
 
         public Form1()
         {
             InitializeComponent();
-            SelectBanco();
 
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -22,17 +23,17 @@ namespace BtnExcluir
         }
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Voc√™ clicou no menu");
+            MessageBox.Show("VocÍ clicou no menu");
         }
 
         private void btnExcluir_Click(object sender, EventArgs e) { }
 
         private void zerar_forms()
         {
-            id_contato_selecioando = null;
+            //id_contato_selecioando = null;
             txtNome.Text = "";
-            txtTelefone.Text = String.Empty;
-            txtEmail.Text = String.Empty;
+            //txtTelefone.Text = String.Empty;
+            //txtEmail.Text = String.Empty;
             txtNome.Focus();
 
         }
@@ -70,29 +71,45 @@ namespace BtnExcluir
         public void SelectBanco()
         {
             // SELECT                      // SELECT CATEGORIA FROM Categoria;
-            dadosBanco = new List<string> {"Limpeza", "Sanitizante", "Alimento", "Jardinagem"};
-               
-            idCategoria = new List<int> { 1, 2, 3, 4 };
+            //dadosBanco = new List<string> { "Limpeza", "Sanitizante", "Alimento", "Jardinagem" };
+
+            //idCategoria = new List<int> { 1, 2, 3, 4 };
 
         }
 
+        #region Teste com Listas
+        //private void btnCarregarContato_Click(object sender, EventArgs e)
+        //{
+        //    string Categoria = txtCategoria.Text.Trim().ToUpper();
+        //    cbTexto.Text = Categoria; // ou com o select
+
+        //    // ALIMENTO
+        //    if (dadosBanco.Contains(Categoria, StringComparer.OrdinalIgnoreCase))
+        //    {
+        //        MessageBox.Show("Valor j· existe");
+
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Valor n„o existe - Cadastrar");
+
+        //        // FUN«√O INSERT
+        //    }
+
+        //}
+        #endregion
+
         private void btnCarregarContato_Click(object sender, EventArgs e)
         {
-            string Categoria = txtCategoria.Text.Trim().ToUpper();
-            cbTexto.Text = Categoria; // ou com o select
-
-            if (dadosBanco.Contains(Categoria, StringComparer.OrdinalIgnoreCase))
-            {
-                MessageBox.Show("Valor j√° existe");
-
-            } else
-            {
-                MessageBox.Show("Valor n√£o existe - Cadastrar");
-
-                // FUN√á√ÉO INSERT
+            Contato contato = new Contato();
+            string nome = contato.nome = txtNome.Text.Trim().ToUpper();
+            
+            MessageBox.Show("O contato digitado foi: " + nome);
+            MessageBox.Show("O contato digitado foi: " + contato.nome);
 
 
-            }
+            // INSERT
+            //cmd.Parameters.AddWithVale("@nome", contato.nome);
 
         }
     }
