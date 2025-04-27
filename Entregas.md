@@ -27,6 +27,9 @@ C# e o banco MySQL
     </ol>
 </ol>
 
+(Sistema de Vendas)[https://github.com/cantaruttim/sistema_vendas/tree/main]
+
+
 `Obs¹`: No item 4 - Validar se um usuário possui login, caso contrário ele deverá realizar o cadastro. 
 Caso esse mesmo usuário deseje criar um novo login, deverá utilizar um novo email/usuário etc pois 
 já possui cadastro
