@@ -38,3 +38,5 @@ Caso esse mesmo usuário deseje criar um novo login, deverá utilizar um novo em
 já possui cadastro
 
 `Obs²`: Quando escolhemos o projeto a ser criado, ao escolher os projetos que terminem com .NET FRAMEWORK, as bibliotecas estarão sendo importadas para apareceram com um pequeno ícone ao lado {}. Podemos importar as bibliotecas livremente. Porem ao escolhermos os projetos que não são .NET FRAMEWORK as bibliotecas aparecem normamlmente não sendo implicitamente referenciadas
+
+`Obs³`: Vídeo Explicando como criar um .exe do seu programa: https://www.youtube.com/watch?v=XrQSuIHwV2k
