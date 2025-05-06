@@ -42,3 +42,8 @@ já possui cadastro
 `Obs²`: Quando escolhemos o projeto a ser criado, ao escolher os projetos que terminem com .NET FRAMEWORK, as bibliotecas estarão sendo importadas para apareceram com um pequeno ícone ao lado {}. Podemos importar as bibliotecas livremente. Porem ao escolhermos os projetos que não são .NET FRAMEWORK as bibliotecas aparecem normamlmente não sendo implicitamente referenciadas
 
 `Obs³`: Vídeo Explicando como criar um .exe do seu programa: https://www.youtube.com/watch?v=XrQSuIHwV2k
+
+Para podermos ter uma ideia de quantas pessoas estarão visitando a nossa feira, para prestigiar as apresentações de vocês
+preencham com o seu nome, e a quantidade de pessoas convidadas e o nome da pessoa convidada
+https://docs.google.com/spreadsheets/d/1tR7SCeH2rX4-hROnjcMwrLx9_kG2PwRFJ8QCXEKC8wg/edit?usp=sharing
+
