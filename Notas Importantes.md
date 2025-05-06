@@ -25,6 +25,8 @@ No corpo do email, indique o seu grupo, nome dos integrantes e Tema do Projeto p
 - <strong>Vídeo do Projeto</strong> - Um vídeo de 4 a 10 minutos explicando o projeto, destacando seu funcionamento e características. É interessante também narrar o percurso e o que os jovens superaram e aprenderam ao longo do projeto. Formatos sugeridos: .MP4, .AVI ou .WMV. <br />
 - <strong>Materiais Adicionais</strong> - Fotos, vídeos e qualquer outro material que queiram compartilhar. Serão bem-vindos! <br />
 
+Obs: Caso o vídeo não seja carregado no email (o que pode ser que aconteça), faça um link do vídeo no googledrive ou no onedrive e então me envie o link. Não esqueça de me dar permissão para ler o arquivo. Em compartilhar vc pode alterar e dar permissão para que eu possa acessar a pasta!!!
+
 <strong>Até o dia 7 de maio, teremos a criação de um sistema de origem autoral, que irá obeder as regras estipuladas 
 abaixo. Devendo conter as telas (figma, draw.io etc) assim como toda a lógica de desenvolvimento na linguagem
 C# e o banco MySQL</strong>
