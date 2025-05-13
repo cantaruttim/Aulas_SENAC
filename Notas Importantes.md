@@ -11,10 +11,9 @@ No corpo do email, indique o seu grupo, nome dos integrantes e Tema do Projeto p
 
 ## Datas Importantes
 `Data de Entrega`: 07 de maio <br />
-`Apresentação dos Projetos`: Início às 14:30 e as repete às 20h
-                              - <strong>Arquivos finais devem ser entregues nesse dia!!!</strong> <br />
-`Apresentação`: 13/05  Encerramento final entre a turma. Projetos serão compartilhados com a equipe de Gestão do Transforme-se. E um café coletivo caso desejem!!! <br />      
-`Encerramento`: 16/05  Encerramento das turmas <br />
+`Apresentação dos Projetos - Feira`: dia 12/05 Início às 14:30 e as repete às 20h - <strong>Arquivos finais devem ser entregues nesse dia!!!</strong> <br />
+`Encerramento SENAC`: 13/05  Encerramento final entre a turma. Projetos serão compartilhados com a equipe de Gestão do Transforme-se. E um café coletivo caso desejem!!! <br />      
+`Encerramento`:       16/05  Encerramento das turmas <br />
 
 ## Checklist de Entrega do Projeto Integrador:
 - <strong>Apresentação - Formato</strong>: .pptx, .pdf, Canva ou outra ferramenta de apresentação. Vamos caprichar na criatividade! <br />
